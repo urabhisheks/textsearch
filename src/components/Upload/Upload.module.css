@@ -1,0 +1,19 @@
+.Upload{
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  height: 200px;
+  margin: 20px;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+.file{
+  height: 30px;
+  width: 40%;
+  float: left
+}
+
+.button{
+  margin: 0 20px;
+}

@@ -1,0 +1,12 @@
+.Home{
+  padding: 8px;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: white;
+  font-size: -webkit-xxx-large;
+}
+
+.Home img{
+  height: 100%;
+}

@@ -1,0 +1,25 @@
+.Carticon{
+  padding: 8px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+  position: relative;
+  display: flex;
+  font-size: -webkit-xxx-large;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff !important;
+}
+  .shopping-icon{
+    width: 24px;
+    height: 24px;
+  }
+
+  .itemcount{
+    font-size: 12px !important;
+    background: #ff0000 !important;
+    color: #fff !important;
+    padding: 0 5px !important;
+    vertical-align: top !important;
+  }
