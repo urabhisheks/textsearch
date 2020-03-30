@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78b8b2950c065ef4f2a14490b616cc3d",
+    "revision": "3427c57f370cf5b0e231f392167fc6f8",
     "url": "/textsearch/index.html"
   },
   {
-    "revision": "9d33af405f57552c61c4",
+    "revision": "29fa39d66e517ca0b2ff",
     "url": "/textsearch/static/css/2.527b9448.chunk.css"
   },
   {
-    "revision": "7be288a1c438c5b972b1",
-    "url": "/textsearch/static/css/main.adb19d58.chunk.css"
+    "revision": "1ad51b280778f269cb77",
+    "url": "/textsearch/static/css/main.c16edce9.chunk.css"
   },
   {
-    "revision": "9d33af405f57552c61c4",
-    "url": "/textsearch/static/js/2.9ae929a4.chunk.js"
+    "revision": "29fa39d66e517ca0b2ff",
+    "url": "/textsearch/static/js/2.0d0a8c58.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/textsearch/static/js/2.9ae929a4.chunk.js.LICENSE.txt"
+    "url": "/textsearch/static/js/2.0d0a8c58.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7be288a1c438c5b972b1",
-    "url": "/textsearch/static/js/main.12d70698.chunk.js"
+    "revision": "1ad51b280778f269cb77",
+    "url": "/textsearch/static/js/main.a13c18da.chunk.js"
   },
   {
     "revision": "4f144ba629adea6c1153",
