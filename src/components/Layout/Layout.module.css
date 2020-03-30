@@ -54,3 +54,11 @@
 ::placeholder {
   color: black;
 }
+
+.error{
+  border: 1px solid red;
+  background-color: yellow;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}

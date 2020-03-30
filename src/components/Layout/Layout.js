@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import classes from './Layout.module.css';
+import { Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 let disabled = true;
@@ -60,10 +61,15 @@ class Layout extends Component {
         </div>)}
       )
     }
-    console.log('Data ', this.props.data);
+    console.log('Data ', this.props.data, typeof this.props.data);
+
     return (
       <div className={classes.Layout}>
         <div>
+          {Object.keys(this.props.data).length? '':
+            <div className={classes.error}>
+              Please <strong><Link to='/upload'>upload</Link> </strong>files first to search 
+            </div>}
           <input 
             className={classes.Input} 
             placeholder='Enter Search Term'
