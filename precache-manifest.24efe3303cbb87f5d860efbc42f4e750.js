@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f477292a3161e2cf94b44d7cdd67964f",
+    "revision": "5e4d6129aa67654225a9c3cfd88da159",
     "url": "/textsearch/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/textsearch/static/css/2.527b9448.chunk.css"
   },
   {
-    "revision": "d2213953746305ece2a1",
+    "revision": "45774953b884c224f443",
     "url": "/textsearch/static/css/main.0600030b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/textsearch/static/js/2.33bf4db1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d2213953746305ece2a1",
-    "url": "/textsearch/static/js/main.c281abe0.chunk.js"
+    "revision": "45774953b884c224f443",
+    "url": "/textsearch/static/js/main.5b99f6e3.chunk.js"
   },
   {
     "revision": "4f144ba629adea6c1153",
