@@ -42,10 +42,10 @@ class Upload extends Component {
         let text = reader.result;
         // console.log('Reader', reader.result.substring(0, 200));
         // console.log('Reader ', 'name',files[0].name , text.split('\n').join(' ').trim().split(' '));
-        let separators = ['|',' ', '\\+', '\\(', '\\\)','\\*', '/', ':', '\\\?', '\n'];
+        let separators = [' ', '\\+', '\\(', '\\\)','\\*', '/', ':', '\\\?', '\n'];
         // console.log('Reader ', 'name',files[0].name , text.split('\n'));
         // console.log('Reader ', 'name',files[0].name , text.split('\n').join(' '));
-        text = text.split(new RegExp(separators));
+        text = text.split(new RegExp(separators.join('|')));
         text = text.filter(el => el!='');
         self.setState({fileName:files[0].name, data:text });
         // self.props.uploadDocument(files[0].name, text);
