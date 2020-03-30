@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import classes from './Upload.module.css';
 import {connect} from 'react-redux';
 import {uploadDocument} from '../../actions/index';
+import FadeIn from 'react-fade-in';
 import { ToastContainer, toast } from 'react-toastify';
 
 let reader = new FileReader();
@@ -9,7 +10,8 @@ class Upload extends Component {
 
   state={
     disabled: true,
-    files: null
+    files: null,
+    uploaded:false,
   }
 
   onClickHandler = e => {
@@ -21,7 +23,7 @@ class Upload extends Component {
     // data.append('file', this.state.selectedFile)
     // self.props.uploadDocument(files[0].name, text);
     this.props.uploadDocument(this.state.fileName, this.state.data);
-    this.setState({disabled:true})
+    this.setState({disabled:true, uploaded:true})
   }
 
   onChangeHandler = e => {
@@ -71,6 +73,9 @@ class Upload extends Component {
             onClick ={this.onClickHandler}
             className={`${classes.button} btn btn-primary`} 
             disabled={this.state.disabled}>Upload</button>
+          {this.state.uploaded && <FadeIn delay={100} >
+            <div className={classes.success}>File uploaded successfully </div>
+          </FadeIn>}
       </div>
     );
   }

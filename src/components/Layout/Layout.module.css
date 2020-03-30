@@ -56,9 +56,13 @@
 }
 
 .error{
-  border: 1px solid red;
   background-color: yellow;
-  margin-bottom: 10px;
-  padding: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
   border-radius: 10px;
+
+  
+  margin: 20px 0;
+  
+  
 }
