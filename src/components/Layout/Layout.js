@@ -35,7 +35,7 @@ class Layout extends Component {
     
     let result =[];
     keys.map(key => {
-      result.push(data[key]);
+      result.push({[key] : data[key]});
     });
     console.log('keys ', keys);
     console.log('keys ', result);
@@ -50,14 +50,18 @@ class Layout extends Component {
     if(this.state.results){
       results =this.state.results.map((result, index) => { 
         console.log('result ', result, Object.keys(result)[0])
-        resultKey = this.state.searchTerm.split(' ')[index];
-        filename = Object.keys(result.filename)[0];
-        console.log('Index: ',result.filename[filename])
+        // resultKey = this.state.searchTerm.split(' ')[index];
+        resultKey = Object.keys(result)[0];
+        filename = Object.keys(result[resultKey].filename).join(' ,');
+        console.log('Index: ',result[resultKey].filename[filename])
           return (<div className={classes.result} key={index}>
             <div><strong>Found:     </strong> {resultKey}</div>
             <div><strong>Filename:  </strong>{filename}</div>
-            <div><strong>Frequency: </strong>{result.count}</div>
-            <div><strong>Index:     </strong>{result.filename[filename].join(', ')}</div>
+            <div><strong>Frequency: </strong>{result[resultKey].count}</div>
+            <div><strong>Index:     </strong>
+              {Object.keys(result[resultKey].filename).map( key=> `${key} [${result[resultKey].filename[key].join(', ')}] `)}
+              {/* {result.filename[filename].join(', ')} */}
+            </div>
         </div>)}
       )
     }
