@@ -23,11 +23,10 @@ class Layout extends Component {
   }
 
   onClickHandler = e => {
-    
     let {data} = this.props;
     let keys = Object.keys(data);
     let temp = [];
-    let individualStr = this.state.searchTerm.split(' ');
+    let individualStr = this.state.searchTerm.trim().split(' ');
     individualStr.map(str => {
       temp = temp.concat(keys.filter(key => key.includes(str)));
     })
